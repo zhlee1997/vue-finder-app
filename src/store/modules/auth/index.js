@@ -1,12 +1,13 @@
 import mutations from './mutations';
-import actions from './actions';
 import getters from './getters';
+import actions from './actions';
 
 export default {
-  namespaced: true,
   state() {
     return {
-      requests: [], // contains coachID
+      userId: null,
+      token: null,
+      didLogout: false,
     };
   },
   mutations,
